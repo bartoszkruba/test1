@@ -10,4 +10,4 @@ addons:
       secure: "MEw8TNlTnkVjW9MibrRByv9FsW1vl39IqssujP2M6tsH3xeAvwbqyoH0orh4WMI25jsFukAvf+4DV6DU1EXNen4v4FpNOsilMm5arZ6VULCZ++k2T8OOcshhpTLYiBcowEqeG4KTp2FydXi2PpsSNfUMSbFp47U4K+ZhqPyzhV3p2Xz2PTuTwj26S5dpKmS6cpj7qiK8UA0ZsrNNV65PtbS3tFXBxfhCWh0tScISFjm8WJR2376AZ7+krZ+QYiIueXv8oom7oesreokjNcgKa/3D/YOwbZuXlf2Mbw3L0GfDJFJmo5o1lUl+IIM9e1g4dCJQW9Yz+mf64zWOKY9f5hvxUqcInJG5IQmpcstFfak8gWZnDoHn4mPfe/KE6HHCsYIthPgAIPQaWrJzSPErJnE/j/Zty6G3+Xy3+uuQK+NXn/WAlRFZBtS5gTBMnCubL8gp/zWpjY+yQdQtTASVaXw0CK26PAyORsfLsoQyi0lZq9TU6TdwQ+5Fy0dpUpaIEJNa1LTJv0Hx4XakgnPg0SpbeoM7snU70dn0elmBg4GDykfXczbuO29t9f5IVRdttmXfHloBWMNyNMRqqZtKl3UH5Zrc1yJvl/KRh2ihnJLDu7ZgBrHKDxJY8ArwdScPDT3iTGL78kwLClTyRB3O4CzfZt8pp/PcnX6RT2cfdgs="
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=bartoszkruba_test1
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=bartoszkruba_test1 -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
