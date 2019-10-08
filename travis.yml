@@ -3,5 +3,12 @@ jdk: openjdk11
 
 dist: bionic
 
+addons:
+  sonarcloud:
+    organization: "bartoszkruba-github"
+    token:
+      secure: "gEkAeaZZzCELJZ4RCIORM00IkECp9CvcCzNUb92PwpFrIOlVzNyCHuUPC/c4R22CBQomGIhIxk+ndRjDlZjmF5KrZGjAq3ZCOKWGISuAA8k4Yekh9TFa71AgaC/xbIKF20Jgmhwsd2X4sLR8RtriSYME9o0CsVHI5/kJnUjZOtzhQFKxGeg29fWXYeK8v8xoZWwlE5B5OzaUgndBLO8VWTDqPeKWNC+4jDCFMuQ1tZrs4EyTUNKmO1Oi7gRRTM0y5ly2amFSmCZ4rJ+afkwcdcoXJpTD4Pahss40RdgeiRyzAyXoqdAD73GmTrd/BVWZEy+YnqXB2R4Gota9sbilihivmHefB5ZG8AVpnvWchPt/5aeZ9ss3EPEiE8bmTOw/hw1wIs4byXHgygGBZ/tuPobtV/Q4EqD8JXSodlstJ3jc6HoIIOLh3j0Vy0GVaNADByIu5UXdT67NgTNbSXDw2cI7e8dSPouAhqcdgo/l7s1PZ8dnskjPV2d4dRTNsQzUMAgc5TfMx6ueJRUWMdgaD19UA6qOe7MvTBab7380ebV+VV0cSyj/wX0qxLPAOOVv7s0j7+PEqgMSroPpzoLWJDH6UT2NF9+OTdfsEsIp3n6deyveCyN0bQAvll3F5iXCoKfeT8jd9vAMjIDJXJgGKC+6bNXSkRipOBRDLxcJ/fQ="
+
+
 script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install
